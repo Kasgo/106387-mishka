@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="http://placehold.it/86x35" alt="Мишка" class="page-header__logo-image" width="86" height="35">
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a>Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="order">
+        <h1 class="order__title">Вязание на заказ</h1>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Тип</legend>
+              <label class="radio">
+                <input class="radio__control" type="radio" name="type" value="decor">
+                <span class="radio__text">Аксессуар для интерьера</span>
+              </label>
+              <label class="radio">
+                <input class="radio__control" type="radio" name="type" value="toys">
+                <span class="radio__text">Детская игрушка</span>
+              </label>
+          </fieldset>
+
+
+        </form>
+      </section>
+
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">Twitter</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
