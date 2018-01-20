@@ -11,18 +11,21 @@
       </a>
 
       <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__item">
-            <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
-          </li>
-          <li class="user-list__item">
-            <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
-          </li>
-        </ul>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -41,7 +44,7 @@
 
       <article class="product-of-week">
         <h1 class="product-of-week__title">Вязаные корзинки</h1>
-        <h2 class="product-of-week__title product-of-week__title--green">ТОВАР НЕДЕЛИ</h2>
+        <span class="product-of-week__mark product-of-week__mark--green">ТОВАР НЕДЕЛИ</span>
         <p class="product-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product-of-week__features">
           <tr class="product-of-week__feature">
