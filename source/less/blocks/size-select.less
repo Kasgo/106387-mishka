@@ -1,0 +1,33 @@
+.size-select__wrapper {
+  display: flex;
+}
+
+.size-select__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: @text-color--gray;
+  font-size: @font-size--medium;
+}
+
+.size-select__size {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  width: 80px;
+
+  box-sizing: border-box;
+  border: 2px solid fade(#444444, 10%);
+  color: @text-color--gray;
+  font-weight: bold;
+}
+
+.size-select__control:focus + .size-select__size,
+.size-select__control:hover + .size-select__size {
+  border-color: fade(#444444, 30%);
+}
+
+.size-select__control:checked + .size-select__size {
+  border-color: @border-color;
+}
