@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Мишка" class="page-header__logo-image" width="86" height="35">
+        <img src="img/logo-mobile.svg" alt="Мишка" class="page-header__logo-image" width="86" height="35">
       </a>
 
       <nav class="main-nav">
@@ -33,41 +33,47 @@
     <main class="page-main">
       <h1 class="page-main__title">Каталог товаров</h1>
 
-      <section class="catalog">
-        <article class="product">
+      <section class="catalog  page-main__item">
+        <article class="catalog__item product">
           <a href="product.html">
-            <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" class="product__image" width="260" height="195">
+            <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" class="product__image" width="260" height="195">
           </a>
-          <h2 class="product__title">
-            <a href="product.html">Зайчик-попрыгайчик</a>
-          </h2>
-          <p class="product__desc">Рост 30 см, вес 200 г</p>
-          <span class="product__price">1 200 руб.</span>
-          <a href="addtocart.html" class="product__buy">Заказать</a>
+          <div class="product__inner">
+            <h2 class="product__title">
+              <a href="product.html">Зайчик-попрыгайчик</a>
+            </h2>
+            <p class="product__desc">Рост 30 см, вес 200 г</p>
+            <span class="product__price">1 200 руб.</span>
+            <a href="addtocart.html" class="product__buy">Заказать</a>
+          </div>
         </article>
 
-        <article class="product">
+        <article class="catalog__item product">
           <a href="product.html">
-            <img src="http://placehold.it/260x195" alt="Корзинка для белья" class="product__image" width="260" height="195">
+            <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" class="product__image" width="260" height="195">
           </a>
-          <h2 class="product__title">
-            <a href="product.html">Корзинка для белья</a>
-          </h2>
-          <p class="product__desc">Диаметр 15 см, высота 10 см</p>
-          <span class="product__price">690 руб.</span>
-          <a href="addtocart.html" class="product__buy">Заказать</a>
+          <div class="product__inner">
+            <h2 class="product__title">
+              <a href="product.html">Корзинка для белья</a>
+            </h2>
+            <p class="product__desc">Диаметр 15 см, высота 10 см</p>
+            <span class="product__price">690 руб.</span>
+            <a href="addtocart.html" class="product__buy">Заказать</a>
+          </div>
         </article>
 
-        <article class="product">
+        <article class="catalog__item product">
           <a href="product.html">
-            <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" class="product__image" width="260" height="195">
+            <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" class="product__image" width="260" height="195">
           </a>
-          <h2 class="product__title">
-            <a href="product.html">Большая корзинка для игрушек</a>
-          </h2>
-          <p class="product__desc">Диаметр 30 см, высота 30 см</p>
-          <span class="product__price">1 500 руб.</span>
-          <a href="addtocart.html" class="product__buy">Заказать</a>
+          <div class="product__inner">
+            <h2 class="product__title">
+              <a href="product.html">Большая корзинка для игрушек</a>
+            </h2>
+            <p class="product__desc">Диаметр 30 см, высота 30 см</p>
+            <span class="product__price">1 500 руб.</span>
+            <a href="addtocart.html" class="product__buy">Заказать</a>
+          </div>
         </article>
       </section>
 
@@ -107,12 +113,12 @@
         <div class="add-to-cart__size size-select">
           <p class="size-select__text">Выберите размер:</p>
           <div class="size-select__wrapper">
-            <input class="size-select__control" id="size-s" type="radio" name="size" value="s">
-            <label class="add-to-cart__size" for="size-s">S</label>
-            <input class="size-select__control" id="size-m" type="radio" name="size" value="m">
-            <label class="add-to-cart__size" for="size-m">M</label>
-            <input class="size-select__control" id="size-l" type="radio" name="size" value="l">
-            <label class="add-to-cart__size" for="size-l">L</label>
+            <input class="size-select__control visually-hidden" id="size-s" type="radio" name="size" value="s">
+            <label class="size-select__size" for="size-s">S</label>
+            <input class="size-select__control visually-hidden" id="size-m" type="radio" name="size" value="m">
+            <label class="size-select__size" for="size-m">M</label>
+            <input class="size-select__control visually-hidden" id="size-l" type="radio" name="size" value="l">
+            <label class="size-select__size" for="size-l">L</label>
           </div>
         </div>
         <button class="button add-to-cart__add" type="submit">Добавить</button>

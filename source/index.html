@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Мишка" class="page-header__logo-image" width="86" height="35">
+        <img src="img/logo-mobile.svg" alt="Мишка" class="page-header__logo-image" width="86" height="35">
       </a>
 
       <nav class="main-nav">
@@ -30,9 +30,10 @@
       </nav>
     </header>
 
-    <main>
-      <section class="features">
-        <h1 class="features__title">Милые штуки ручной работы для дома</h1>
+    <main class="page-main">
+      <h1 class="page-main__title page-main__title--hero">Милые штуки ручной работы для дома</h1>
+
+      <section class="features page-main__item">
         <ul class="features__list">
           <li class="features__item">
             <a href="decor.html" class="features__link features__link--decor">Предметы интерьера</a>
@@ -43,7 +44,7 @@
         </ul>
       </section>
 
-      <article class="product-of-week">
+      <article class="product-of-week page-main__item">
         <h2 class="product-of-week__title">Вязаные корзинки</h2>
         <span class="product-of-week__mark product-of-week__mark--green">ТОВАР НЕДЕЛИ</span>
         <p class="product-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -66,7 +67,7 @@
         <a href="addtocart.html" class="button product-of-week__buy">Заказать</a>
       </article>
 
-      <section class="about-us">
+      <section class="about-us page-main__item">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--flower">Экологически чистые материалы</li>
@@ -78,7 +79,7 @@
         </ul>
       </section>
 
-      <section class="reviews">
+      <section class="reviews page-main__item">
         <h2 class="reviews__title">Отзывы</h2>
         <blockquote class="reviews__item">
           <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -94,7 +95,7 @@
         <a href="review.html" class="button reviews__write">Написать</a>
       </section>
 
-      <section class="contacts">
+      <section class="contacts page-main__item">
         <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -138,12 +139,12 @@
         <div class="add-to-cart__size size-select">
           <p class="size-select__text">Выберите размер:</p>
           <div class="size-select__wrapper">
-            <input class="size-select__control" id="size-s" type="radio" name="size" value="s">
-            <label class="add-to-cart__size" for="size-s">S</label>
-            <input class="size-select__control" id="size-m" type="radio" name="size" value="m">
-            <label class="add-to-cart__size" for="size-m">M</label>
-            <input class="size-select__control" id="size-l" type="radio" name="size" value="l">
-            <label class="add-to-cart__size" for="size-l">L</label>
+            <input class="size-select__control visually-hidden" id="size-s" type="radio" name="size" value="s">
+            <label class="size-select__size" for="size-s">S</label>
+            <input class="size-select__control visually-hidden" id="size-m" type="radio" name="size" value="m">
+            <label class="size-select__size" for="size-m">M</label>
+            <input class="size-select__control visually-hidden" id="size-l" type="radio" name="size" value="l">
+            <label class="size-select__size" for="size-l">L</label>
           </div>
         </div>
         <button class="button add-to-cart__add" type="submit">Добавить</button>
