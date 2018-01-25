@@ -1,0 +1,17 @@
+.textarea__control {
+  border: 2px solid @border-color--gray;
+  color: @text-color--gray;
+  font-size: @font-size;
+  line-height: 18px;
+
+  outline: none;
+
+  &:focus,
+  &:hover {
+    border-color: @border-color;
+  }
+
+  &::placeholder {
+    color: fade(@text-color--gray, 30%);
+  }
+}

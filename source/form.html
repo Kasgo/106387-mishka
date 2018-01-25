@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/86x35" alt="Мишка" class="page-header__logo-image" width="86" height="35">
+        <img src="img/logo-mobile.svg" alt="Мишка" class="page-header__logo-image" width="86" height="35">
       </a>
 
       <nav class="main-nav">
@@ -30,8 +31,9 @@
     </header>
 
     <main class="page-main">
-      <section class="order">
-        <h1 class="order__title">Вязание на заказ</h1>
+      <h1 class="page-main__title">Вязание на заказ</h1>
+
+      <section class="order page-main__item">
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__wrapper" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="order__item order-desc">
@@ -39,13 +41,15 @@
             <ul class="order-desc__list">
               <li class="order-desc__item">
                 <label class="radio">
-                  <input class="radio__control" type="radio" name="type" value="decor">
+                  <input class="radio__control visually-hidden" type="radio" name="type" value="decor">
+                  <span class="radio__indicator"></span>
                   <span class="radio__text">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="order-desc__item">
                 <label class="radio">
-                  <input class="radio__control" type="radio" name="type" value="toys">
+                  <input class="radio__control visually-hidden" type="radio" name="type" value="toys">
+                  <span class="radio__indicator"></span>
                   <span class="radio__text">Детская игрушка</span>
                 </label>
               </li>
@@ -57,37 +61,43 @@
             <ul class="order-desc__list">
               <li class="order-desc__item">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="color" value="white">
+                  <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="white">
+                  <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Белый</span>
                 </label>
               </li>
               <li class="order-desc__item">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="color" value="gray">
+                  <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="gray">
+                  <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Серый</span>
                 </label>
               </li>
               <li class="order-desc__item">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="color" value="tiffany">
+                  <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="tiffany">
+                  <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">«Тиффани»</span>
                 </label>
               </li>
               <li class="order-desc__item">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="color" value="black">
+                  <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="black">
+                  <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Черный</span>
                 </label>
               </li>
               <li class="order-desc__item">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="color" value="pink">
+                  <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="pink">
+                  <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Розовый</span>
                 </label>
               </li>
               <li class="order-desc__item">
                 <label class="checkbox">
-                  <input class="checkbox__control" type="checkbox" name="color" value="orange">
+                  <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="orange">
+                  <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Оранжевый</span>
                 </label>
               </li>

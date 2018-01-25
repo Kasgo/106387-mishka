@@ -1,0 +1,32 @@
+.checkbox {
+  display: inline-block;
+  min-height: 40px;
+  padding-left: 60px;
+  padding-top: 10px;
+  position: relative;
+}
+
+.checkbox__indicator {
+  height: 36px;
+  width: 36px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 2px solid @border-color--gray;
+}
+
+.checkbox__control:checked + .checkbox__indicator {
+  background: url('../img/icon-tick.svg') no-repeat center;
+  background-size: 22px 16px;
+}
+
+.checkbox__control:focus + .checkbox__indicator,
+.checkbox:hover > .checkbox__indicator {
+  border-color: @border-color;
+}
+
+.checkbox__text {
+  font-weight: bold;
+}
