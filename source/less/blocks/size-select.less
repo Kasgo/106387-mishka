@@ -18,14 +18,14 @@
   width: 80px;
 
   box-sizing: border-box;
-  border: 2px solid fade(#444444, 10%);
+  border: 2px solid fade(@border-color--gray, 10%);
   color: @text-color--gray;
   font-weight: bold;
 }
 
 .size-select__control:focus + .size-select__size,
 .size-select__control:hover + .size-select__size {
-  border-color: fade(#444444, 30%);
+  border-color: fade(@border-color--gray, 30%);
 }
 
 .size-select__control:checked + .size-select__size {
