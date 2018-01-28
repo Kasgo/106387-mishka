@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @screen-md) {
+    display: flex;
+  }
 }
 
 .site-list__item {
@@ -9,5 +13,9 @@
   a {
     display: block;
     padding: 25px 0;
+  }
+
+  @media (min-width: @screen-md) {
+    margin-right: 35px;
   }
 }

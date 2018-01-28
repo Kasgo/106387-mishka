@@ -7,6 +7,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @screen-md) {
+    display: flex;
+  }
+}
+
+.features__item {
+  @media (min-width: @screen-md) {
+    flex-grow: 1;
+  }
 }
 
 .features__link {

@@ -1,3 +1,15 @@
+.simple-article {
+  @media (min-width: @screen-md) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @screen-lg) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .simple-article__title {
   margin-top: 0;
   margin-bottom: 0;
@@ -9,6 +21,13 @@
   font-weight: bold;
   line-height: 24px;
   border: 1px solid #ececec;
+
+  @media (min-width: @screen-lg) {
+    padding-left: 60px;
+    width: 305px;
+
+    border-bottom: none;
+  }
 }
 
 .simple-article__video {
@@ -31,12 +50,29 @@
     margin-left: -50px;
     background: transparent url('../img/icon-play.svg') no-repeat;
   }
+
+  @media (min-width: @screen-md) {
+    order: -1;
+  }
+
+  @media (min-width: @screen-lg) {
+    height: 458px;
+    width: 683px;
+  }
 }
 
 .simple-article__inner {
   padding-top: 29px;
-  padding-left: 34px;
+  padding-left: 35px;
   border: 1px solid #ececec;
+
+  @media (min-width: @screen-lg) {
+    width: 330px;
+    margin-top: -275px;
+    margin-left: 683px;
+
+    border-top: none;
+  }
 }
 
 .simple-article__text {

@@ -2,12 +2,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @screen-md) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .user-list__item {
 
+
   a {
     display: block;
-    padding: 25px 0;
+    padding-left: 46px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @media (min-width: @screen-md) {
+      padding-left: 83px;
+      border-left: 1px solid fade(@border-color--gray, 10%);
+    }
   }
 }
