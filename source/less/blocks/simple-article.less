@@ -22,11 +22,13 @@
   line-height: 24px;
   border: 1px solid #ececec;
 
+  @media (min-width: @screen-md) {
+    border-bottom: none;
+  }
+
   @media (min-width: @screen-lg) {
     padding-left: 60px;
     width: 305px;
-
-    border-bottom: none;
   }
 }
 
@@ -37,6 +39,7 @@
   position: relative;
 
   background: #ffffff url('../img/video-mobile@1x.jpg') no-repeat;
+  background-size: 100% 100%;
 
   &::before {
     content: '';
@@ -52,6 +55,8 @@
   }
 
   @media (min-width: @screen-md) {
+    height: 455px;
+    width: 668px;
     order: -1;
   }
 
@@ -66,12 +71,14 @@
   padding-left: 35px;
   border: 1px solid #ececec;
 
+  @media (min-width: @screen-md) {
+    border-top: none;
+  }
+
   @media (min-width: @screen-lg) {
     width: 330px;
     margin-top: -275px;
     margin-left: 683px;
-
-    border-top: none;
   }
 }
 

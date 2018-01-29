@@ -6,13 +6,12 @@
 
   @media (min-width: @screen-lg) {
     padding-top: 60px;
-    position: relative;
   }
 }
 
 .product-of-week__title {
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 55px;
   padding: 0;
 
   font-size: @font-size--h2;
@@ -21,10 +20,14 @@
 
   @media (min-width: @screen-md) {
     width: 500px;
+
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media (min-width: @screen-lg) {
     width: 875px;
+
 
     position: relative;
     z-index: 1;
@@ -47,12 +50,14 @@
   @media (min-width: @screen-md) {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 55px;
 
     text-align: center;
   }
 
   @media (min-width: @screen-lg) {
     order: -1;
+
   }
 
   &--green {
@@ -64,20 +69,17 @@
   }
 }
 
-.product-of-week__inner {
+.product-of-week__desc-wrapper {
   @media (min-width: @screen-md) {
-    min-height: 420px;
+    //min-height: 420px;
     width: 334px;
-    padding-top: 50px;
-    position: relative;
   }
 
   @media (min-width: @screen-lg) {
-    min-height: 490px;
+    //min-height: 490px;
     width: 290px;
     margin-left: 175px;
     padding-right: 60px;
-    position: static;
   }
 }
 
@@ -106,18 +108,14 @@
     width: 334px;
     height: 405px;
     margin-bottom: 0;
-
-    position: absolute;
-    top: 57px;
-    right: -334px;
+    padding-top: 5px;
   }
 
   @media (min-width: @screen-lg) {
     width: 525px;
     height: 636px;
-
-    top: 0;
-    right: 0;
+    margin-top: -122px;
+    padding-top: 0;
   }
 }
 
@@ -126,4 +124,14 @@
   margin-bottom: 25px;
   font-weight: bold;
   color: @text-color--gray;
+}
+
+.product-of-week__price-wrapper {
+  @media (min-width: @screen-md) {
+    margin-top: -100px;
+  }
+
+  @media (min-width: @screen-lg) {
+    padding-left: 175px;
+  }
 }

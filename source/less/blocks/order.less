@@ -12,3 +12,21 @@
   margin-bottom: 34px;
   padding: 0;
 }
+
+.order__inner {
+  @media (min-width: @screen-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @screen-lg) {
+    padding-left: 175px;
+  }
+}
+
+.order__send {
+  @media (min-width: @screen-md) {
+    order: -1;
+  }
+}

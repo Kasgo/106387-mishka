@@ -13,18 +13,23 @@
           <img src="img/logo-mobile.svg" alt="Мишка" class="main-nav__logo-image" width="86" height="35">
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list main-nav__list--site site-list">
-            <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-          </ul>
-          <ul class="main-nav__list main-nav__list--user user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
-            </li>
-          </ul>
+        <ul class="main-nav__list main-nav__list--site site-list">
+          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user user-list">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <p class="main-nav__text">Бесплатная доставка по России</p>
+        <ul class="main-nav__list main-nav__list--other other-list">
+          <li class="other-list__item"><a href="catalog.html">Новые поступления</a></li>
+          <li class="other-list__item"><a href="form.html">Распродажа</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -45,7 +50,7 @@
       <article class="product-of-week page-main__item">
         <h2 class="product-of-week__title">Вязаные корзинки</h2>
         <span class="product-of-week__mark product-of-week__mark--green">ТОВАР НЕДЕЛИ</span>
-        <div class="product-of-week__inner">
+        <div class="product-of-week__desc-wrapper">
           <p class="product-of-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="product-of-week__features">
             <tr class="product-of-week__feature">
@@ -61,10 +66,13 @@
               <td class="product-of-week__feature-desc">15 см</td>
             </tr>
           </table>
-          <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" class="product-of-week__image" width="260" height="315">
+        </div>
+        <img src="img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" class="product-of-week__image" width="260" height="315">
+        <div class="product-of-week__price-wrapper">
           <span class="product-of-week__price">Цена: 990 руб.</span>
           <a href="addtocart.html" class="button product-of-week__buy">Заказать</a>
         </div>
+
       </article>
 
       <section class="about-us page-main__item">
