@@ -1,21 +1,23 @@
 @import 'variables.less';
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans'),
-      url(../fonts/opensans.woff2) format('woff2'),
-      url(../fonts/opensans.woff) format('woff');
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans'),
-      url(../fonts/opensansbold.woff2) format('woff2'),
-      url(../fonts/opensansbold.woff) format('woff');
+  font-family: "OpenSans";
+  src: local("OpenSans"),
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
 }
 
 body {
+  min-width: 320px;
+
   font-family: @font-family;
   font-size: @font-size;
 
@@ -39,13 +41,16 @@ a:hover {
 @import 'blocks/catalog.less';
 @import 'blocks/checkbox.less';
 @import 'blocks/contacts.less';
+@import 'blocks/container.less';
 @import 'blocks/features.less';
+@import 'blocks/main-nav.less';
 @import 'blocks/page-main.less';
 @import 'blocks/page-footer.less';
 @import 'blocks/product.less';
 @import 'blocks/product-of-week.less';
 @import 'blocks/order.less';
 @import 'blocks/order-desc.less';
+@import 'blocks/other-list.less';
 @import 'blocks/radio.less';
 @import 'blocks/reviews.less';
 @import 'blocks/simple-article.less';

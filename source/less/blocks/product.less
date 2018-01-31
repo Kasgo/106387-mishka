@@ -1,5 +1,12 @@
 .product {
+  @media (min-width: @screen-md) {
+    display: flex;
+  }
 
+  @media (min-width: @screen-lg) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .product__title {
@@ -8,6 +15,22 @@
 
   font-size: 17px;
   line-height: 24px;
+}
+
+.product__link {
+  display: flex;
+}
+
+.product__image {
+  @media (min-width: @screen-md) {
+    height: 334px;
+    width: 334px;
+  }
+
+  @media (min-width: @screen-lg) {
+    height: 465px;
+    width: 315px;
+  }
 }
 
 .product__desc {
@@ -21,14 +44,19 @@
   padding-right: 28px;
 
   border: 1px solid #ededed;
+
+  @media (min-width: @screen-md) {
+    width: 332px;
+  }
+
+  @media (min-width: @screen-lg) {
+    width: 257px;
+    flex-grow: 1;
+  }
 }
 
 .product__price {
   font-size: @font-size--medium;
   line-height: 24px;
   font-weight: bold;
-}
-
-.product__buy {
-
 }

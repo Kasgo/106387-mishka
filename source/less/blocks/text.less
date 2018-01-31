@@ -1,7 +1,15 @@
+.text {
+  @media (min-width: @screen-md) {
+    width: 100%;
+    display: flex;
+  }
+}
+
 .text__control {
   padding: 16px 0;
   box-sizing: border-box;
   height: 52px;
+  width: 100%;
   border: none;
   border-bottom: 2px solid #000000;
   outline: none;
@@ -18,8 +26,17 @@
   &::placeholder {
     color: fade(@text-color--gray, 30%);
   }
+
+  @media (min-width: @screen-md) {
+    flex-grow: 1;
+  }
 }
 
 .text__text {
   font-weight: bold;
+
+  @media (min-width: @screen-md) {
+    padding-top: 13px;
+    margin-right: 25px;
+  }
 }

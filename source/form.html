@@ -2,42 +2,45 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="img/logo-mobile.svg" alt="Мишка" class="page-header__logo-image" width="86" height="35">
-      </a>
-
+    <header class="page-header container">
       <nav class="main-nav">
+        <a href="index.html" class="main-nav__logo">
+          <img src="img/logo-mobile.svg" alt="Мишка" class="main-nav__logo-image" width="86" height="35">
+        </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="site-list__item"><a>Вязание на заказ</a></li>
-          </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
-            </li>
-            <li class="user-list__item">
-              <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list main-nav__list--site site-list">
+          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="site-list__item"><a>Вязание на заказ</a></li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--user user-list">
+          <li class="user-list__item">
+            <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
+          </li>
+          <li class="user-list__item">
+            <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
+          </li>
+        </ul>
+        <p class="main-nav__text">Бесплатная доставка по России</p>
+        <ul class="main-nav__list main-nav__list--other other-list">
+          <li class="other-list__item"><a href="catalog.html">Новые поступления</a></li>
+          <li class="other-list__item"><a href="form.html">Распродажа</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <h1 class="page-main__title">Вязание на заказ</h1>
 
       <section class="order page-main__item">
         <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="order__wrapper" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="order__item order-desc">
-            <legend class="order-desc__title">Тип</legend>
+          <div class="order__item order-desc">
+            <h3 class="order-desc__title">Тип</h3>
             <ul class="order-desc__list">
               <li class="order-desc__item">
                 <label class="radio">
@@ -54,47 +57,47 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="order__item order-desc">
-            <legend class="order-desc__title">Цвет</legend>
-            <ul class="order-desc__list">
-              <li class="order-desc__item">
+          <div class="order__item order-desc">
+            <h3 class="order-desc__title">Цвет</h3>
+            <ul class="order-desc__list order-desc__list--color">
+              <li class="order-desc__item order-desc__item--color">
                 <label class="checkbox">
                   <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="white">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Белый</span>
                 </label>
               </li>
-              <li class="order-desc__item">
+              <li class="order-desc__item order-desc__item--color">
                 <label class="checkbox">
                   <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="gray">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Серый</span>
                 </label>
               </li>
-              <li class="order-desc__item">
+              <li class="order-desc__item order-desc__item--color">
                 <label class="checkbox">
                   <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="tiffany">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">«Тиффани»</span>
                 </label>
               </li>
-              <li class="order-desc__item">
+              <li class="order-desc__item order-desc__item--color">
                 <label class="checkbox">
                   <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="black">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Черный</span>
                 </label>
               </li>
-              <li class="order-desc__item">
+              <li class="order-desc__item order-desc__item--color">
                 <label class="checkbox">
                   <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="pink">
                   <span class="checkbox__indicator"></span>
                   <span class="checkbox__text">Розовый</span>
                 </label>
               </li>
-              <li class="order-desc__item">
+              <li class="order-desc__item order-desc__item--color">
                 <label class="checkbox">
                   <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="orange">
                   <span class="checkbox__indicator"></span>
@@ -102,10 +105,10 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="order__item order-desc">
-            <legend class="order-desc__title">ФИО</legend>
+          <div class="order__item order-desc">
+            <h3 class="order-desc__title">ФИО</h3>
             <ul class="order-desc__list">
               <li class="order-desc__item">
                 <label class="text">
@@ -126,53 +129,59 @@
                 </label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="order__item order-desc">
-            <legend class="order-desc__title">Тел</legend>
+          <div class="order__item order-desc">
+            <h3 class="order-desc__title">Тел</h3>
             <label class="text text--phone">
               <input class="text__control" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
             </label>
-          </fieldset>
+          </div>
 
-          <fieldset class="order__item order-desc">
-            <legend class="order-desc__title">E-mail</legend>
+          <div class="order__item order-desc">
+            <h3 class="order-desc__title">E-mail</h3>
             <label class="text text--email">
               <input class="text__control" type="email" name="email" placeholder="Ваш Email*">
             </label>
-          </fieldset>
+          </div>
 
-          <fieldset class="order__item order-desc">
-            <legend class="order-desc__title">Доп</legend>
+          <div class="order__item order-desc">
+            <h3 class="order-desc__title">Доп</h3>
             <label class="textarea">
               <textarea class="textarea__control" name="desc" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
-          </fieldset>
+          </div>
 
-          <p class="order__text">*Поля обязательны для заполнения</p>
-          <button class="button order__send" type="submit">Отправить заказ</button>
+          <div class="order__inner">
+            <p class="order__text">*Поля обязательны для заполнения</p>
+            <button class="button order__send" type="submit">Отправить заказ</button>
+          </div>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--instagram">Instagram</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--facebook">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--twitter">Twitter</a>
-          </li>
-        </ul>
-      </div>
+      <div class="page-footer__wrapper container">
+        <img src="img/logo-mobile.svg" alt="Мишка" class="page-footer__logo" width="86" height="35">
 
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--instagram">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        </div>
       </div>
     </footer>
 
