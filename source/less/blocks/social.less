@@ -1,5 +1,35 @@
 .social__list {
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
   margin: 0;
+
   list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 60px;
+  height: 30px;
+
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+    background-size: 22px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-fb.svg");
+    background-size: 15px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-size: 23px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
