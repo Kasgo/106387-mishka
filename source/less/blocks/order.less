@@ -10,6 +10,23 @@
     font-size: @font-size;
     line-height: 30px;
   }
+
+  &--desc {
+    @media (min-width: @screen-md) {
+      margin-bottom: 5px;
+    }
+
+    @media (min-width: @screen-lg) {
+      padding-left: 175px;
+      padding-right: 175px;
+    }
+  }
+
+  &--note {
+    @media (min-width: @screen-md) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .order__item {
@@ -17,8 +34,36 @@
   margin-bottom: 34px;
   padding: 0;
 
-  &:last-child {
-    margin-bottom: 12px;
+  @media (min-width: @screen-md) {
+    margin-bottom: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @screen-lg) {
+    padding-right: 175px;
+  }
+
+  &--gray {
+    @media (min-width: @screen-md) {
+      background-color: @gray-light;
+    }
+  }
+
+  &--color {
+    padding-right: 0;
+  }
+
+  &--phone {
+    @media (min-width: @screen-md) {
+      padding-bottom: 12px;
+    }
+  }
+
+  &--email {
+    @media (min-width: @screen-md) {
+      padding-top: 12px;
+    }
   }
 }
 
@@ -31,6 +76,7 @@
 
   @media (min-width: @screen-lg) {
     padding-left: 175px;
+    padding-right: 175px;
   }
 }
 
@@ -38,6 +84,7 @@
   width: 100%;
 
   @media (min-width: @screen-md) {
+    width: 230px;
     order: -1;
   }
 }

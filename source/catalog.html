@@ -8,27 +8,29 @@
   </head>
   <body>
     <header class="page-header container">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <a href="index.html" class="main-nav__logo">
           <img src="img/logo-mobile.svg" alt="Мишка" class="main-nav__logo-image" width="86" height="35">
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list main-nav__list--site site-list">
-          <li class="site-list__item"><a>Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav__list--site">
+          <li class="main-nav__list-item"><a>Каталог товаров</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
         </ul>
-        <ul class="main-nav__list main-nav__list--user user-list">
-          <li class="user-list__item">
-            <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
           </li>
-          <li class="user-list__item">
-            <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
           </li>
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
-        <ul class="main-nav__list main-nav__list--other other-list">
-          <li class="other-list__item"><a href="catalog.html">Новые поступления</a></li>
-          <li class="other-list__item"><a href="form.html">Распродажа</a></li>
+        <ul class="main-nav__list main-nav__list--other">
+          <li class="main-nav__list-item"><a href="catalog.html">Новые поступления</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Распродажа</a></li>
         </ul>
       </nav>
     </header>

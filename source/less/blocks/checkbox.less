@@ -1,9 +1,16 @@
 .checkbox {
   display: inline-block;
   min-height: 40px;
-  padding-left: 60px;
+  padding-left: 62px;
   padding-top: 10px;
   position: relative;
+
+  @media (min-width: @screen-md) {
+    padding-left: 80px;
+    padding-top: 13px;
+
+    font-size: 19px;
+  }
 }
 
 .checkbox__indicator {
@@ -15,16 +22,29 @@
   left: 0;
 
   border: 2px solid @border-color--gray;
+
+  @media (min-width: @screen-md) {
+    width: 50px;
+    height: 48px;
+  }
 }
 
 .checkbox__control:checked + .checkbox__indicator {
   background: url("../img/icon-tick.svg") no-repeat center;
   background-size: 22px 16px;
+
+  @media (min-width: @screen-md) {
+    background-size: 33px 22px;
+  }
 }
 
 .checkbox__control:focus + .checkbox__indicator,
 .checkbox:hover > .checkbox__indicator {
   border-color: @border-color;
+}
+
+.checkbox:active > .checkbox__indicator {
+  border-color: fade(@border-color--gray, 30%);
 }
 
 .checkbox__text {

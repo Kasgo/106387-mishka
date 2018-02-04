@@ -17,6 +17,7 @@
 
 body {
   min-width: 320px;
+  margin: 0;
 
   font-family: @font-family;
   font-size: @font-size;
@@ -29,10 +30,14 @@ a {
   font-weight: bold;
   color: @link-color;
   text-decoration: none;
-}
 
-a:hover {
-  color: fade(@link-color, 60%);
+  &:hover {
+    color: fade(@link-color, 60%);
+  }
+
+  &:active {
+    color: fade(@link-color, 30%);
+  }
 }
 
 @import 'blocks/about-us.less';

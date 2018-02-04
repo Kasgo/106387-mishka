@@ -8,27 +8,29 @@
   </head>
   <body>
     <header class="page-header container">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <a href="index.html" class="main-nav__logo">
           <img src="img/logo-mobile.svg" alt="Мишка" class="main-nav__logo-image" width="86" height="35">
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list main-nav__list--site site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a>Вязание на заказ</a></li>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list main-nav__list--site">
+          <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__list-item"><a>Вязание на заказ</a></li>
         </ul>
-        <ul class="main-nav__list main-nav__list--user user-list">
-          <li class="user-list__item">
-            <a href="#" class="user-list__link user-list__link--search">Поиск по сайту</a>
+        <ul class="main-nav__list main-nav__list--user">
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__link main-nav__link--search">Поиск по сайту</a>
           </li>
-          <li class="user-list__item">
-            <a href="#" class="user-list__link user-list__link--cart">Корзина: пока пуста</a>
+          <li class="main-nav__list-item">
+            <a href="#" class="main-nav__link main-nav__link--cart">Корзина: пока пуста</a>
           </li>
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
-        <ul class="main-nav__list main-nav__list--other other-list">
-          <li class="other-list__item"><a href="catalog.html">Новые поступления</a></li>
-          <li class="other-list__item"><a href="form.html">Распродажа</a></li>
+        <ul class="main-nav__list main-nav__list--other">
+          <li class="main-nav__list-item"><a href="catalog.html">Новые поступления</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Распродажа</a></li>
         </ul>
       </nav>
     </header>
@@ -36,10 +38,13 @@
     <main class="page-main">
       <h1 class="page-main__title">Вязание на заказ</h1>
 
-      <div class="container">
-        <section class="order page-main__item">
-          <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <form class="order__wrapper" action="https://echo.htmlacademy.ru" method="get">
+
+      <section class="order page-main__item">
+        <div class="container">
+          <p class="order__text order__text--desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+        <form class="order__wrapper" action="https://echo.htmlacademy.ru" method="get">
+          <div class="container">
             <div class="order__item order-desc">
               <h3 class="order-desc__title">Тип</h3>
               <ul class="order-desc__list">
@@ -59,55 +64,61 @@
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="order__item order-desc">
-              <h3 class="order-desc__title">Цвет</h3>
-              <ul class="order-desc__list order-desc__list--color">
-                <li class="order-desc__item order-desc__item--color">
-                  <label class="checkbox">
-                    <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="white">
-                    <span class="checkbox__indicator"></span>
-                    <span class="checkbox__text">Белый</span>
-                  </label>
-                </li>
-                <li class="order-desc__item order-desc__item--color">
-                  <label class="checkbox">
-                    <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="gray">
-                    <span class="checkbox__indicator"></span>
-                    <span class="checkbox__text">Серый</span>
-                  </label>
-                </li>
-                <li class="order-desc__item order-desc__item--color">
-                  <label class="checkbox">
-                    <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="tiffany">
-                    <span class="checkbox__indicator"></span>
-                    <span class="checkbox__text">«Тиффани»</span>
-                  </label>
-                </li>
-                <li class="order-desc__item order-desc__item--color">
-                  <label class="checkbox">
-                    <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="black">
-                    <span class="checkbox__indicator"></span>
-                    <span class="checkbox__text">Черный</span>
-                  </label>
-                </li>
-                <li class="order-desc__item order-desc__item--color">
-                  <label class="checkbox">
-                    <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="pink">
-                    <span class="checkbox__indicator"></span>
-                    <span class="checkbox__text">Розовый</span>
-                  </label>
-                </li>
-                <li class="order-desc__item order-desc__item--color">
-                  <label class="checkbox">
-                    <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="orange">
-                    <span class="checkbox__indicator"></span>
-                    <span class="checkbox__text">Оранжевый</span>
-                  </label>
-                </li>
-              </ul>
+          <div class="order__item--gray">
+            <div class="container">
+              <div class="order__item order__item--color order-desc">
+                <h3 class="order-desc__title">Цвет</h3>
+                <ul class="order-desc__list order-desc__list--color">
+                  <li class="order-desc__item order-desc__item--color">
+                    <label class="checkbox">
+                      <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="white">
+                      <span class="checkbox__indicator"></span>
+                      <span class="checkbox__text">Белый</span>
+                    </label>
+                  </li>
+                  <li class="order-desc__item order-desc__item--color">
+                    <label class="checkbox">
+                      <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="gray">
+                      <span class="checkbox__indicator"></span>
+                      <span class="checkbox__text">Серый</span>
+                    </label>
+                  </li>
+                  <li class="order-desc__item order-desc__item--color">
+                    <label class="checkbox">
+                      <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="tiffany">
+                      <span class="checkbox__indicator"></span>
+                      <span class="checkbox__text">«Тиффани»</span>
+                    </label>
+                  </li>
+                  <li class="order-desc__item order-desc__item--color">
+                    <label class="checkbox">
+                      <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="black">
+                      <span class="checkbox__indicator"></span>
+                      <span class="checkbox__text">Черный</span>
+                    </label>
+                  </li>
+                  <li class="order-desc__item order-desc__item--color">
+                    <label class="checkbox">
+                      <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="pink">
+                      <span class="checkbox__indicator"></span>
+                      <span class="checkbox__text">Розовый</span>
+                    </label>
+                  </li>
+                  <li class="order-desc__item order-desc__item--color">
+                    <label class="checkbox">
+                      <input class="checkbox__control visually-hidden" type="checkbox" name="color" value="orange">
+                      <span class="checkbox__indicator"></span>
+                      <span class="checkbox__text">Оранжевый</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
 
+          <div class="container">
             <div class="order__item order-desc">
               <h3 class="order-desc__title">ФИО</h3>
               <ul class="order-desc__list">
@@ -131,21 +142,26 @@
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="order__item order-desc">
-              <h3 class="order-desc__title">Тел</h3>
-              <label class="text text--phone">
-                <input class="text__control text-control--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
-              </label>
+          <div class="order__item--gray">
+            <div class="container">
+              <div class="order__item order__item--phone order-desc">
+                <h3 class="order-desc__title">Тел</h3>
+                <label class="text text--phone">
+                  <input class="text__control text__control--phone text__control--gray" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+                </label>
+              </div>
+              <div class="order__item order__item--email order-desc">
+                <h3 class="order-desc__title">E-mail</h3>
+                <label class="text text--email">
+                  <input class="text__control text__control--email text__control--gray" type="email" name="email" placeholder="Ваш Email*">
+                </label>
+              </div>
             </div>
+          </div>
 
-            <div class="order__item order-desc">
-              <h3 class="order-desc__title">E-mail</h3>
-              <label class="text text--email">
-                <input class="text__control text-control--email" type="email" name="email" placeholder="Ваш Email*">
-              </label>
-            </div>
-
+          <div class="container">
             <div class="order__item order-desc">
               <h3 class="order-desc__title">Доп</h3>
               <label class="textarea">
@@ -154,12 +170,12 @@
             </div>
 
             <div class="order__inner">
-              <p class="order__text">*Поля обязательны для заполнения</p>
+              <p class="order__text order__text--note">*Поля обязательны для заполнения</p>
               <button class="button order__send" type="submit">Отправить заказ</button>
             </div>
-          </form>
-        </section>
-      </div>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">

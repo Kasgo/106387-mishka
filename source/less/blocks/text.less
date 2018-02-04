@@ -4,6 +4,8 @@
   @media (min-width: @screen-md) {
     width: 100%;
     display: flex;
+
+    font-size: 19px;
   }
 
   &::after {
@@ -45,6 +47,13 @@
   line-height: 18px;
   color: @text-color--gray;
 
+  @media (min-width: @screen-md) {
+    flex-grow: 1;
+    padding-left: 17px;
+
+    font-size: 19px;
+  }
+
   &:focus,
   &:hover {
     border-bottom-color: @border-color;
@@ -54,13 +63,15 @@
     color: fade(@text-color--gray, 30%);
   }
 
-  @media (min-width: @screen-md) {
-    flex-grow: 1;
-  }
-
   &--phone,
   &--email {
     padding-right: 35px;
+  }
+
+  &--gray {
+    @media (min-width: @screen-md) {
+      background-color: @gray-light;
+    }
   }
 }
 
