@@ -8,28 +8,32 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 30px;
 
-  &--instagram {
-    background-image: url("../img/icon-insta.svg");
-    background-size: 22px 21px;
-    background-repeat: no-repeat;
-    background-position: center;
+  &--instagram svg {
+    width: 22px;
+    height: 22px;
   }
 
-  &--facebook {
-    background-image: url("../img/icon-fb.svg");
-    background-size: 15px 28px;
-    background-repeat: no-repeat;
-    background-position: center;
+  &--facebook svg {
+    width: 15px;
+    height: 28px;
   }
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
-    background-size: 23px 20px;
-    background-repeat: no-repeat;
-    background-position: center;
+  &--twitter svg {
+    width: 24px;
+    height: 21px;
+  }
+
+  &:hover path {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -12,6 +12,7 @@
   margin-top: 0;
   margin-bottom: 25px;
 
+  font-size: @font-size;
   line-height: 17px;
   font-weight: bold;
   color: @title-color--form;
@@ -25,7 +26,8 @@
   }
 
   @media (min-width: @screen-lg) {
-    width: 175px;
+    padding-left: 60px;
+    width: 115px;
   }
 
   &::after {
@@ -38,6 +40,10 @@
     @media (min-width: @screen-md) {
       content: none;
     }
+  }
+
+  &--single-input {
+    margin-bottom: 7px;
   }
 }
 
@@ -62,16 +68,37 @@
 }
 
 .order-desc__item {
-  margin-bottom: 22px;
+  margin-bottom: 15px;
+
+  @media (min-width: @screen-md) {
+    margin-bottom: 25px;
+  }
 
   &--color {
+    margin-bottom: 22px;
+
     @media (min-width: @screen-md) {
-      width: 240px;
-      margin-right: auto;
+      width: 225px;
+      margin-right: 35px;
     }
 
     @media (min-width: @screen-lg) {
       width: 260px;
+      margin-right: 0;
+    }
+  }
+
+  &--color:nth-child(2n) {
+    @media (min-width: @screen-md) {
+      margin-right: 0;
+    }
+  }
+
+  &--radio {
+    margin-bottom: 0;
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 23px;
     }
   }
 }
