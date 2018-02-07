@@ -1,13 +1,20 @@
 .size-select__wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .size-select__text {
   margin-top: 0;
   margin-bottom: 25px;
+
   color: @text-color--gray;
   font-size: @font-size--medium;
   line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @screen-md) {
+    font-size: @font-size;
+  }
 }
 
 .size-select__size {
@@ -22,6 +29,10 @@
   border: 2px solid fade(@border-color--gray, 10%);
   color: @text-color--gray;
   font-weight: bold;
+
+  @media (min-width: @screen-md) {
+    width: 110px;
+  }
 }
 
 .size-select__control:focus + .size-select__size,

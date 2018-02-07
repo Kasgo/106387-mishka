@@ -8,6 +8,24 @@
 .catalog__item {
   margin-bottom: 30px;
 
+  @media (min-width: @screen-md) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @screen-lg) {
+    margin-bottom: 30px;
+  }
+
+  &:last-child {
+    @media (min-width: @screen-md) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @screen-lg) {
+      margin-bottom: 30px;
+    }
+  }
+
   &:nth-child(3n) {
     @media (min-width: @screen-lg) {
       margin-right: 0;

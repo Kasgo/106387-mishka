@@ -13,23 +13,53 @@
 }
 
 .main-nav__list {
+  width: 320px;
+  margin: 0 -30px;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: (@screen-md - 1)) {
+    .main-nav--closed &--user,
+    .main-nav--closed &--site {
+      display: none;
+    }
+
+    .main-nav--opened &--user,
+    .main-nav--opened &--site {
+      display: block;
+    }
+  }
+
+  @media (min-width: @screen-md) {
+    display: flex;
+    margin: 0;
+  }
+
   &--site {
     @media (min-width: @screen-md) {
+      width: 400px;
       order: 1;
       flex-shrink: 0;
+
+      font-size: @font-size--medium;
     }
 
     @media (min-width: @screen-lg) {
+      width: 380px;
       order: 0;
+
+      font-size: @font-size;
     }
   }
 
   &--user {
     @media (min-width: @screen-md) {
       width: 500px;
+      justify-content: flex-end;
     }
 
     @media (min-width: @screen-lg) {
+      width: 350px;
       order: 1;
     }
   }
@@ -38,28 +68,186 @@
     display: none;
 
     @media (min-width: @screen-lg) {
-      display: block;
+      width: 380px;
+      display: flex;
       order: 1;
+
+      font-size: @font-size--medium;
+    }
+  }
+}
+
+.main-nav__list-item {
+  display: flex;
+  padding: 0 30px;
+
+  border-top: 1px solid fade(@border-color--gray, 10%);
+
+  @media (min-width: @screen-md) {
+    padding: 0;
+
+    border-top: none;
+  }
+
+  a {
+    display: block;
+    padding-left: 46px;
+    padding-top: 27px;
+    padding-bottom: 28px;
+
+    position: relative;
+
+    @media (min-width: @screen-md) {
+      padding-left: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.main-nav__list--site a {
+  @media (min-width: @screen-md) {
+    margin-right: 35px;
+  }
+
+  @media (min-width: @screen-lg) {
+    margin-right: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.main-nav__list--site .main-nav__list-item:nth-child(2n+1) a,
+.main-nav__list--other .main-nav__list-item:nth-child(2n+1) a {
+  @media (min-width: @screen-lg) {
+    width: 175px;
+    padding-right: 10px;
+  }
+}
+
+.main-nav__list--site .main-nav__list-item:nth-child(2n) a,
+.main-nav__list--other .main-nav__list-item:nth-child(2n) a {
+  @media (min-width: @screen-lg) {
+    width: 165px;
+    padding-left: 35px;
+  }
+}
+
+.main-nav__list--site .main-nav__list-item:nth-child(2n) a {
+  @media (min-width: @screen-lg) {
+    border-left: 1px solid #ececec;
+  }
+}
+
+.main-nav__list--user a {
+  @media (min-width: @screen-md) {
+    padding-left: 83px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-left: 1px solid fade(@border-color--gray, 10%);
+  }
+}
+
+.main-nav__link {
+  &--search {
+    @media (min-width: @screen-md) {
+      font-size: 0;
+    }
+  }
+
+  &:hover .main-nav__link-icon {
+    opacity: 1;
+  }
+
+  &:hover path {
+    fill: #63d1bb;
+  }
+
+  &:active .main-nav__link-icon {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link-icon {
+  position: absolute;
+  opacity: 0.2;
+
+  &--search {
+    height: 18px;
+    width: 18px;
+
+    top: 32px;
+    left: 2px;
+
+    @media (min-width: @screen-md) {
+      top: 37px;
+      left: 33px;
+    }
+  }
+
+  &--cart {
+    height: 19px;
+    width: 21px;
+
+    top: 32px;
+    left: 0;
+
+    @media (min-width: @screen-md) {
+      top: 35px;
+      left: 31px;
     }
   }
 }
 
 .main-nav__toggle {
+  width: 40px;
+  height: 30px;
+
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 24px;
+  right: -7px;
+
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: @screen-md) {
     display: none;
   }
+
+  .main-nav--nojs & {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav__logo {
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @screen-md) {
     width: 160px;
   }
 
   @media (min-width: @screen-lg) {
+    margin-left: 97px;
+    margin-right: auto;
     order: 1;
   }
 }
@@ -70,5 +258,7 @@
   @media (min-width: @screen-md) {
     display: block;
     order: 2;
+
+    font-size: @font-size--medium;
   }
 }

@@ -13,12 +13,40 @@
   a {
     display: block;
     padding-left: 46px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    position: relative;
 
     @media (min-width: @screen-md) {
       padding-left: 83px;
       border-left: 1px solid fade(@border-color--gray, 10%);
     }
+  }
+}
+
+.user-list__link {
+  &--search::before {
+    content: "";
+    height: 18px;
+    width: 18px;
+
+    position: absolute;
+    top: 32px;
+    left: 2px;
+
+    background-image: url("../img/icon-search.svg");
+  }
+
+  &--cart::before {
+    content: "";
+    height: 18px;
+    width: 21px;
+
+    position: absolute;
+    top: 32px;
+    left: 0;
+
+    background-image: url("../img/icon-cart.svg");
   }
 }

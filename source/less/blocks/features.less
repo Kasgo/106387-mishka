@@ -8,42 +8,103 @@
   padding: 0;
   list-style: none;
 
+  font-size: 19px;
+  line-height: 24px;
+
   @media (min-width: @screen-md) {
     display: flex;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .features__item {
   @media (min-width: @screen-md) {
-    flex-grow: 1;
+    width: 50%;
   }
-}
 
-.features__link {
-  display: block;
-  padding-top: 30px;
-  padding-right: 90px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  text-decoration: none;
+  &:hover {
+    margin-top: -5px;
+  }
 
   &--decor {
     background-color: #63d1bb;
-    color: #ffffff;
+
+    a::after {
+      content: "";
+      height: 62px;
+      width: 40px;
+
+      position: absolute;
+      top: 23px;
+      right: 36px;
+
+      background-image: url("../img/icon-interior.svg");
+
+      @media (min-width: @screen-md) {
+        top: 30px;
+      }
+    }
   }
 
   &--decor:hover {
     background-color: #59d5bc;
-    color: #ffffff;
   }
 
   &--toys {
     background-color: #56c3b2;
-    color: #ffffff;
+
+    a::after {
+      content: "";
+      height: 60px;
+      width: 60px;
+
+      position: absolute;
+      top: 21px;
+      right: 27px;
+
+      background-image: url("../img/icon-toy.svg");
+
+      @media (min-width: @screen-md) {
+        top: 32px;
+        right: 34px;
+      }
+    }
   }
 
   &--toys:hover {
     background-color: #46c1ae;
+  }
+
+  a {
+    min-height: 63px;
+    display: block;
+    padding-top: 30px;
+    padding-right: 90px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+    position: relative;
+
     color: #ffffff;
+    text-decoration: none;
+
+    @media (min-width: @screen-md) {
+      min-height: 79px;
+      padding-left: 36px;
+    }
+  }
+
+  a::after {
+    opacity: 0.5;
+  }
+
+  a:hover::after {
+    opacity: 0.7;
+  }
+
+  a:active {
+    opacity: 0.3;
   }
 }

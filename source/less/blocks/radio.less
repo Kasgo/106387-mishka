@@ -1,9 +1,17 @@
 .radio {
   display: inline-block;
-  min-height: 40px;
-  padding-left: 60px;
+  min-height: 30px;
+  padding-left: 62px;
   padding-top: 10px;
   position: relative;
+
+  @media (min-width: @screen-md) {
+    min-height: 40px;
+    padding-left: 80px;
+    padding-top: 13px;
+
+    font-size: 19px;
+  }
 }
 
 .radio__text {
@@ -24,6 +32,14 @@
   border: 2px solid @border-color--gray;
   border-radius: 20px;
   box-shadow: inset 0 0 0 10px #ffffff;
+
+  @media (min-width: @screen-md) {
+    width: 52px;
+    height: 53px;
+
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 13px #ffffff;
+  }
 }
 
 .radio__control:checked + .radio__indicator {
@@ -33,4 +49,8 @@
 .radio__control:focus + .radio__indicator,
 .radio:hover > .radio__indicator {
   border-color: @border-color;
+}
+
+.radio:active > .radio__indicator {
+  border-color: fade(@border-color--gray, 30%);
 }
