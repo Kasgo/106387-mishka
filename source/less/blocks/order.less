@@ -29,6 +29,19 @@
   }
 }
 
+.order__group {
+  @media (min-width: @screen-md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &--gray {
+    @media (min-width: @screen-md) {
+      background-color: @gray-light;
+    }
+  }
+}
+
 .order__item {
   margin: 0;
   margin-bottom: 32px;
@@ -36,18 +49,10 @@
 
   @media (min-width: @screen-md) {
     margin-bottom: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 
   @media (min-width: @screen-lg) {
     padding-right: 175px;
-  }
-
-  &--gray {
-    @media (min-width: @screen-md) {
-      background-color: @gray-light;
-    }
   }
 
   &--color {
