@@ -9,16 +9,21 @@ body {
   background-color: @bg-color;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   font-weight: bold;
   color: @link-color;
   text-decoration: none;
 
-  &:hover {
+  &[href]:hover {
     color: fade(@link-color, 60%);
   }
 
-  &:active {
+  &[href]:active {
     color: fade(@link-color, 30%);
   }
 }
