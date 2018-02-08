@@ -1,10 +1,11 @@
-
 .main-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+
   position: relative;
+  z-index: 2;
 
   @media (min-width: @screen-md) {
     flex-direction: row;
@@ -243,12 +244,26 @@
 
   @media (min-width: @screen-md) {
     width: 160px;
+    padding-bottom: 17px;
   }
 
   @media (min-width: @screen-lg) {
-    margin-left: 97px;
+    margin-left: 70px;
     margin-right: auto;
+    padding-top: 8px;
+    padding-bottom: 1px;
     order: 1;
+  }
+
+  img {
+    @media (min-width: @screen-md) {
+      width: 112px;
+      height: auto;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: 149px;
+    }
   }
 }
 
