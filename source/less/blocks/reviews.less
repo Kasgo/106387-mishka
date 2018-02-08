@@ -9,15 +9,23 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-content: start;
     width: 668px;
     padding-top: 70px;
     padding-left: 50px;
     padding-right: 50px;
 
-    background: url("../img/review@1x.jpg") no-repeat;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @screen-md) and (min-resolution: @retina-dpi),
+    (min-width: @screen-md) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/review@2x.jpg");
   }
 
   @media (min-width: @screen-lg) {
+    min-height: 387px;
     width: @screen-lg - 275;
     padding-left: 225px;
 

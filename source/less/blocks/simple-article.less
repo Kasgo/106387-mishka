@@ -42,7 +42,7 @@
   }
 
   @media (min-width: @screen-lg) {
-    margin-bottom: 0;
+    margin-bottom: 280px;
     padding-left: 80px;
     padding-top: 95px;
     padding-right: 50px;
@@ -78,8 +78,39 @@
   height: 150px;
   position: relative;
 
-  background: #ffffff url("../img/video-mobile@1x.jpg") no-repeat;
+  background-color: #ffffff;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/video-mobile@2x.jpg");
+  }
+
+  @media (min-width: @screen-md) {
+    height: 455px;
+    width: 668px;
+    order: -1;
+
+    background-image: url("../img/video-tablet@1x.jpg");
+  }
+
+  @media (min-width: @screen-md) and (min-resolution: @retina-dpi),
+    (min-width: @screen-md) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/video-tablet@2x.jpg");
+  }
+
+  @media (min-width: @screen-lg) {
+    height: 455px;
+    width: 682px;
+
+    background-image: url("../img/video-desktop@1x.jpg");
+  }
+
+  @media (min-width: @screen-lg) and (min-resolution: @retina-dpi),
+    (min-width: @screen-lg) and (min-resolution: @retina-dppx) {
+    background-image: url("../img/video-desktop@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -110,17 +141,6 @@
 
     opacity: 0.3;
   }
-
-  @media (min-width: @screen-md) {
-    height: 455px;
-    width: 668px;
-    order: -1;
-  }
-
-  @media (min-width: @screen-lg) {
-    height: 458px;
-    width: 682px;
-  }
 }
 
 .simple-article__inner {
@@ -139,7 +159,7 @@
 
   @media (min-width: @screen-lg) {
     width: 330px;
-    margin-top: -280px;
+    margin-top: -278px;
     margin-left: 682px;
     padding-left: 80px;
     padding-right: 57px;
@@ -155,14 +175,14 @@
   line-height: 24px;
 
   @media (min-width: @screen-md) {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 
     font-size: @font-size--medium;
     line-height: 30px;
   }
 
   @media (min-width: @screen-lg) {
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 }
 
