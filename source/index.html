@@ -13,7 +13,7 @@
 
     <header class="page-header container">
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <a class="main-nav__logo">
+        <a class="link main-nav__logo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -24,19 +24,19 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list main-nav__list--site">
-          <li class="main-nav__list-item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__list-item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__list-item"><a href="catalog.html" class="link">Каталог товаров</a></li>
+          <li class="main-nav__list-item"><a href="form.html" class="link">Вязание на заказ</a></li>
         </ul>
         <ul class="main-nav__list main-nav__list--user">
           <li class="main-nav__list-item">
-            <a href="#" class="main-nav__link main-nav__link--search">
+            <a href="#" class="link main-nav__link main-nav__link--search">
               <svg class="main-nav__link-icon main-nav__link-icon--search" width="18" height="18">
                 <use xlink:href="#icon-search"></use>
               </svg>
               Поиск по сайту</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#" class="main-nav__link main-nav__link--cart">
+            <a href="#" class="link main-nav__link main-nav__link--cart">
               <svg class="main-nav__link-icon main-nav__link-icon--cart" width="21" height="19">
                 <use xlink:href="#icon-cart"></use>
               </svg>
@@ -45,8 +45,8 @@
         </ul>
         <p class="main-nav__text">Бесплатная доставка по России</p>
         <ul class="main-nav__list main-nav__list--other">
-          <li class="main-nav__list-item"><a href="catalog.html">Новые поступления</a></li>
-          <li class="main-nav__list-item"><a href="form.html">Распродажа</a></li>
+          <li class="main-nav__list-item"><a href="catalog.html" class="link">Новые поступления</a></li>
+          <li class="main-nav__list-item"><a href="form.html" class="link">Распродажа</a></li>
         </ul>
       </nav>
     </header>
@@ -155,7 +155,7 @@
               <li class="contacts__item">
                 <span class="contacts__name">e-mail: </span>
                 <span class="contacts__desc contacts__desc--mail">
-                  <a href="mailto:info@mimimishkashop.ru" class="contacts__mail">info@mimimishkashop.ru</a>
+                  <a href="mailto:info@mimimishkashop.ru" class="link link--mail">info@mimimishkashop.ru</a>
                 </span>
               </li>
               <li class="contacts__item">
@@ -185,6 +185,7 @@
           <svg width="102" height="34">
             <use xlink:href="#logo-footer"></use>
           </svg>
+          <span class="visually-hidden">Мишка</span>
         </a>
 
         <div class="page-footer__social social">
@@ -215,7 +216,7 @@
         </div>
 
         <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="link page-footer__copyright-link">
             Разработано
             <svg width="27" height="34">
               <use xlink:href="#logo-htmlacademy"></use>
