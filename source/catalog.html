@@ -74,7 +74,7 @@
               <p class="product__desc">Рост 30 см, вес 200 г</p>
               <div class="product__price-wrapper">
                 <span class="product__price">1 200 руб.</span>
-                <a href="addtocart.html" class="product__buy">
+                <a href="addtocart.html" class="product__buy js-buy">
                   <svg width="21" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -102,7 +102,7 @@
               <p class="product__desc">Диаметр 15 см, высота 10 см</p>
               <div class="product__price-wrapper">
                 <span class="product__price">690 руб.</span>
-                <a href="addtocart.html" class="product__buy">
+                <a href="addtocart.html" class="product__buy js-buy">
                   <svg width="21" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -130,7 +130,7 @@
               <p class="product__desc">Диаметр 30 см, высота 30 см</p>
               <div class="product__price-wrapper">
                 <span class="product__price">1 500 руб.</span>
-                <a href="addtocart.html" class="product__buy">
+                <a href="addtocart.html" class="product__buy js-buy">
                   <svg width="21" height="19">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
@@ -202,22 +202,24 @@
       </div>
     </footer>
 
-    <div class="add-to-cart">
-      <b class="add-to-cart__title">Добавить в корзину</b>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <div class="add-to-cart__size size-select">
-          <p class="size-select__text">Выберите размер:</p>
-          <div class="size-select__wrapper">
-            <input class="size-select__control visually-hidden" id="size-s" type="radio" name="size" value="s">
-            <label class="size-select__size" for="size-s">S</label>
-            <input class="size-select__control visually-hidden" id="size-m" type="radio" name="size" value="m">
-            <label class="size-select__size" for="size-m">M</label>
-            <input class="size-select__control visually-hidden" id="size-l" type="radio" name="size" value="l">
-            <label class="size-select__size" for="size-l">L</label>
+    <div class="add-to-cart add-to-cart--hide">
+      <div class="add-to-cart__inner">
+        <b class="add-to-cart__title">Добавить в корзину</b>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="add-to-cart__size size-select">
+            <p class="size-select__text">Выберите размер:</p>
+            <div class="size-select__wrapper">
+              <input class="size-select__control visually-hidden" id="size-s" type="radio" name="size" value="s">
+              <label class="size-select__size" for="size-s">S</label>
+              <input class="size-select__control visually-hidden" id="size-m" type="radio" name="size" value="m">
+              <label class="size-select__size" for="size-m">M</label>
+              <input class="size-select__control visually-hidden" id="size-l" type="radio" name="size" value="l">
+              <label class="size-select__size" for="size-l">L</label>
+            </div>
           </div>
-        </div>
-        <button class="button add-to-cart__add" type="submit">Добавить</button>
-      </form>
+          <button class="button button--add-to-cart add-to-cart__add" type="submit">Добавить</button>
+        </form>
+      </div>
     </div>
 
     <script src="js/picturefill.js"></script>
