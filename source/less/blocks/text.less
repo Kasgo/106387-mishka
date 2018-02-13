@@ -8,12 +8,10 @@
     font-size: 19px;
   }
 
-  &:focus .text__control,
   &:hover .text__control {
     border-bottom-color: @border-color;
   }
 
-  &:focus .text__control + svg,
   &:hover .text__control + svg {
     fill: @border-color;
     opacity: 1;
@@ -41,8 +39,17 @@
     font-size: 19px;
   }
 
+  &:focus {
+    border-bottom-color: @border-color;
+  }
+
+  &:focus + svg {
+    fill: @border-color;
+    opacity: 1;
+  }
+
   &::placeholder {
-    color: fade(@text-color--gray, 30%);
+    opacity: 0.3;
   }
 
   &--phone,
