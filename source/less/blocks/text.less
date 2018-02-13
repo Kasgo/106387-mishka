@@ -7,6 +7,15 @@
 
     font-size: 19px;
   }
+
+  &:hover .text__control {
+    border-bottom-color: @border-color;
+  }
+
+  &:hover .text__control + svg {
+    fill: @border-color;
+    opacity: 1;
+  }
 }
 
 .text__control {
@@ -30,21 +39,17 @@
     font-size: 19px;
   }
 
-  &:focus,
-  &:hover {
+  &:focus {
     border-bottom-color: @border-color;
   }
 
-  &:focus + svg,
-  &:hover + svg,
-  &:focus + svg path,
-  &:hover + svg path {
+  &:focus + svg {
     fill: @border-color;
     opacity: 1;
   }
 
   &::placeholder {
-    color: fade(@text-color--gray, 30%);
+    opacity: 0.3;
   }
 
   &--phone,

@@ -15,11 +15,11 @@
     margin-right: 330px;
   }
 
-  &:hover svg {
+  &[href]:hover svg {
     fill: #46c1ae;
   }
 
-  &:active {
+  &[href]:active {
     opacity: 0.3;
   }
 }
@@ -57,17 +57,19 @@
   align-items: center;
   font-size: 19px;
 
-  &:hover path {
+  &:hover svg {
     fill: #46c1ae;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
 
-.page-footer__copyright-link svg {
-  width: 27px;
-  height: 35px;
-  margin-left: 30px;
+  svg {
+    width: 27px;
+    height: 35px;
+    margin-left: 30px;
+
+    fill: #63d1bb;
+  }
 }
