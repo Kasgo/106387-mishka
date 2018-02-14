@@ -42,3 +42,9 @@ if(addToCart && buyLink) {
     }
   });
 }
+
+var contacts = document.querySelector('.contacts');
+
+if(contacts) {
+  contacts.classList.remove('contacts--nojs');
+}
