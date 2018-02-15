@@ -31,6 +31,7 @@
 
   box-sizing: border-box;
   background-color: #ffffff;
+  background-clip: padding-box;
   border: 2px solid @border-color--gray;
   border-radius: 20px;
   box-shadow: inset 0 0 0 10px #ffffff;
@@ -44,13 +45,17 @@
   }
 }
 
-.radio__control:checked + .radio__indicator {
+.radio:hover > .radio__indicator {
+  border-color: @border-color;
+}
+
+.radio__control:checked + .radio__indicator,
+.radio:active > .radio__indicator {
   background-color: @border-color;
 }
 
-.radio__control:focus + .radio__indicator,
-.radio:hover > .radio__indicator {
-  border-color: @border-color;
+.radio__control:checked:active + .radio__indicator {
+  background-color: #ffffff;
 }
 
 .radio:active > .radio__indicator {

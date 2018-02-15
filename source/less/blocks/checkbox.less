@@ -30,8 +30,15 @@
   }
 }
 
-.checkbox__control:checked + .checkbox__indicator {
-  background: url("../img/icon-tick.svg") no-repeat center;
+.checkbox:hover > .checkbox__indicator {
+  border-color: @border-color;
+}
+
+.checkbox__control:checked + .checkbox__indicator,
+.checkbox:active > .checkbox__indicator {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 22px 16px;
 
   @media (min-width: @screen-md) {
@@ -39,9 +46,8 @@
   }
 }
 
-.checkbox__control:focus + .checkbox__indicator,
-.checkbox:hover > .checkbox__indicator {
-  border-color: @border-color;
+.checkbox__control:checked:active + .checkbox__indicator {
+  background-image: none;
 }
 
 .checkbox:active > .checkbox__indicator {
